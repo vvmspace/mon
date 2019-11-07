@@ -14,7 +14,7 @@ npm install
 
 Copy *config.example.js* to *config.js* and modify it like that:
 
-```
+```js
 module.exports = {
     phones: [
         79999999999,
