@@ -1,5 +1,3 @@
-console.log('We are inside config.example.js');
-
 module.exports = {
     phones: [
         // YOUR_PHONES
