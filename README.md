@@ -1,4 +1,6 @@
-# URL Monitoring with SMS Notifications
+# URL Monitoring script with SMS Notifications
+
+smsc.ru is first sms provider of this script. Send pull requests with other sms providers and messages.
 
 ## Installation
 
@@ -23,9 +25,21 @@ module.exports = {
         'http://ёбаный.site', // your url 1
         'http://api.ёбаный.site', // your url 2
     ],
-    smsc: {
+    smsc: { // your account credentials from smsc.ru
         login: 'YOUR_SMSC_LOGIN',
         password: 'YOUR_SMSC_PASSWORD',
     }
 };
+```
+
+## Scheduling
+
+Add this script to cron:
+
+```
+crontab -e
+```
+
+```
+*/5 * * * * node /path/to/mon/index.js
 ```
