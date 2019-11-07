@@ -6,7 +6,7 @@ smsc.ru is first sms provider of this script. Send pull requests with other sms 
 
 Clone or download this repository and run:
 
-```
+```bash
 npm install
 ```
 
@@ -36,7 +36,7 @@ module.exports = {
 
 Add this script to cron:
 
-```
+```bash
 crontab -e
 ```
 
