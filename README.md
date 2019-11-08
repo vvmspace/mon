@@ -6,7 +6,7 @@ smsc.ru is first sms provider of this script. Send pull requests with other sms 
 
 Clone or download this repository and run:
 
-```
+```bash
 npm install
 ```
 
@@ -14,7 +14,7 @@ npm install
 
 Copy *config.example.js* to *config.js* and modify it like that:
 
-```
+```js
 module.exports = {
     phones: [
         79999999999,
@@ -36,7 +36,7 @@ module.exports = {
 
 Add this script to cron:
 
-```
+```bash
 crontab -e
 ```
 
